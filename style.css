@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: #E63946;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+
+    position: fixed;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#navbar a:hover{
+    color: #4361EE;
+    text-shadow: 1px 1px 10px white;
+}
+
+nav ul{
+    display: flex;
+
+    list-style: none;
+}
+nav li{
+    padding: 0px 10px;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #457B9D;
+    color: #ECF7F8;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+#welcome-section h2{
+    font-style: italic;
+    font-size: 2rem;
+}
+
+#proyects{
+    width: 100%;
+    height: 100vh;
+    background-color: #F1FAEE;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: "title" "tiles";
+}
+
+#proyects h2{
+    width: 100%;
+    grid-area: title;
+    background-color: #1D3557;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.proyects-tiles{
+    grid-area: tiles;
+    width: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    overflow: scroll;
+}
+
+.proyect-tile{
+    max-width: 45%;
+    min-width: 25%;  
+    min-height: min-content;  
+    max-height: 45%;
+    overflow: hidden;
+
+    background-color: cadetblue;
+    
+    margin: 20px 0px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10% ;
+    grid-template-areas: "img" "description";
+}
+
+.proyect-tile:hover{
+    box-shadow: 5px 5px 40px black;
+}
+
+.proyect-tile img{
+    grid-area: img;
+    max-width: 100%;
+}
+
+.proyect-description{
+    grid-area: description;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact{
+    width: 100%;
+    height: 15vh;
+    background-color: #E63946;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-tile{
+    width: min-content;
+    height: 10vh;
+    margin: 0px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+}
+
+.contact-tile a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-tile a:hover{
+    color: deepskyblue;
+}
+
+@media screen and (max-width:800px){
+    .proyect-tile{
+        min-width: 45%;
+        max-width: 45%;
+    }
+
+    #contact{
+        height: 5vh;
+    }
+}

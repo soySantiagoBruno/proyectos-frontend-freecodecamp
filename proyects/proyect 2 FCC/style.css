@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(90deg, #95f9c3, #0b3866);
+}
+
+header{
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin: 0px auto;
+    width: 60%;
+    color: #016fb9ff;
+    background: white;
+}
+
+#description{
+    font-style: italic;
+}
+
+label{
+    display: block;
+}
+
+main{
+    background-color: #182825;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.subcontenedor{
+    margin: 30px;
+}
+
+input{
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select{
+    width: 90%;
+    height: 2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+ width: 1.2rem;
+ height: 1.2rem;
+}
+
+.input-text{
+    font-size: 1.2rem;
+    color: #22AED1;
+}
+
+.input-name{
+    font-size: 1.5rem;
+    color: hsl(204, 99%, 56%);
+}
+
+textarea{
+    width: 90%;
+    height: 9rem;
+    font-size: 1.2rem;
+}
+
+::placeholder{
+    font-size: 1.2rem;
+}
+
+button{
+    width: 30%;
+    height: min-content;
+    font-size: 2rem;
+    display: block;
+    margin: auto;
+
+    background-color: #016fb9ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #016fb9ff;
+}

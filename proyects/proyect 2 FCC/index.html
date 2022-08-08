@@ -1,0 +1,116 @@
+<!-- 
+    Santiago Bruno
+    Practice Exercise -Survey Form- freeCodeCamp
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thanks you for taking the time to help us improve the platform</p>
+    </header>
+    
+    <main>
+    
+        <form action="" id="survey-form">
+    
+            <!-- name -->
+            <div class="subcontenedor">
+                <label id="name-label" for="name">
+                    <div class="input-name">Name</div>
+                    <input type="text" id="name" placeholder="Santiago" required>
+                </label>
+            </div>
+
+            <!-- email -->
+            <div class="subcontenedor">
+                <label id="email-label" for="email">
+                    <div class="input-name">eMail</div>
+                    <input type="email" id="email" placeholder="santiago123@example.com" required>
+                </label>
+          </div>
+          <!-- number -->
+          <div class="subcontenedor">
+                <label id="number-label" for="number">
+                    <div class="input-name">Age</div>
+                    <input type="number" id="number" min="0" max="100" placeholder="18">
+                </label>
+            </div>
+            
+            <!-- current role -->
+            <div class="subcontenedor">
+                <label for="dropdown">
+                    <div class="input-name">Current Role</div>
+                    <select id="dropdown">
+                        <option value="option-1">Student</option>
+                        <option value="option-2">Full time job</option>
+                        <option value="option-3">Other</option>
+                    </select>
+                </label>
+            </div>
+          
+          <div class="subcontenedor">
+            <!-- user recommend -->
+            <label for="definitely">
+                <div class="input-name">Would you recommend freeCodeCamp to a friend?</div>
+        
+                <input type="radio" name="user-recommend" id="definitely" value="definitely">
+                <span class="input-text">Definitely</span>
+            </label>
+          
+            <label for="not-sure">
+                <input type="radio" name="user-recommend" id="not-sure" value="not-sure">
+                <span class="input-text">Not sure</span>
+            </label>
+        </div>
+
+          <div class="subcontenedor">
+              <!-- favorite feature -->
+            <label for="challenges">
+                <div class="input-name">What is your favorite future of FCC?</div>
+                <input type="checkbox" 
+                name="favorite-feature" id="challenges" value="challenges">
+                <span class="input-text">challenges</span>
+            </label>
+        
+            <label for="community">
+                <input type="checkbox" name="favorite-feature" id="community" value="community">
+                <span class="input-text">community</span>
+            </label>
+        
+            <label for="proyects">
+                <input type="checkbox" name="favorite-feature" id="proyects" value="proyects">
+                <span class="input-text">other</span>
+            </label>
+          </div>
+
+          <div class="subcontenedor">
+                <!-- text area -->
+                <div class="input-name">Any comments?</div>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="put your comment here!" id="text-area"></textarea>
+          </div>
+
+          <div class="subcontenedor">
+            <!-- send button -->
+            <button type="submit" id="submit">Send!</button>
+          </div> 
+      
+          </form>
+      </main>
+    
+    
+    
+    
+    
+      
+
+</body>
+</html>

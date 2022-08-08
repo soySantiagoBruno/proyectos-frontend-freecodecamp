@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-areas: "navbar main-doc";
+
+    font-family: monospace;
+}
+
+#navbar {
+    grid-area: navbar;
+
+    display: grid;
+    
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "title" "links";
+
+    width: 100%;
+    overflow: scroll;
+    height: 100vh;
+}
+
+#link-container{
+    display: flex;
+    flex-direction: column;
+    
+    grid-area: links;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;   
+    font-size: 1.3rem;
+
+    border-top: 1px solid black;
+    padding: 10px 0px 10px 30px;
+    grid-area: title;
+}
+
+.nav-link:hover{
+    color: #00C9A7;
+    text-shadow: #00C9A7 10px 10px 50px;
+    
+}
+
+#main-title {
+    grid-area: title;
+    font-size: calc(1.5rem + 1vw);
+    padding: 10px;
+
+    background-color: #fff;
+    height: 10vh;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-doc{
+    grid-area: main-doc;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.main-section{
+    margin: 30px
+}
+
+.main-section p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+header{
+    font-size: 2rem;
+}
+
+#main-doc header:hover{
+    color: #00C9A7;
+    text-shadow: #00C9A7 10px 10px 50px;
+}
+
+code, li{
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 100%;
+        grid-template-areas: "navbar" "main-doc";
+    }
+
+    #navbar{
+        max-height: 40vh;
+        border-bottom: 2px solid black;
+        grid-area: navbar;
+    }
+
+    #main-doc{
+        overflow: visible;
+        grid-area: main-doc;
+    }
+    
+    #main-title{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 1px 30px black;
+        padding: 0px;
+    }
+
+    #link-container{
+        height: 30vh;
+        margin-top: 10vh;
+    }
+
+}
